@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HPC Facility Booking System | Dateh Ambe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="projects-header">
+  <div class="back-button">
+    <a href="../projects.html" title="Back to Projects">
+      <img src="../assets/icons/door.svg" alt="Back to Projects">
+    </a>
+  </div>
+  <div class="header-text" data-aos="fade-up">
+    <h1><span class="highlight">HPC Facility Booking System</span></h1>
+    <p>A live production platform digitizing facility bookings at UWC’s High Performance Centre.</p>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="project-detail glass" data-aos="fade-up">
+
+  <!-- PROJECT STORY -->
+  <div class="detail-section">
+    <h2> Project Story</h2>
+    <p>
+      The idea for the <strong>HPC Facility Booking System</strong> was born inside the High Performance Centre itself.
+      During a training session with my biokineticist, I noticed how the team managed all facility reservations through
+      a handwritten booking book — pages filled with names, times, and notes. I immediately saw the potential to digitize
+      this process and knew I had both the technical background and understanding of their daily workflow to make it happen.
+    </p>
+    <p>
+      What began as a concept quickly evolved into a fully operational web application. Today, the HPC Booking System
+      is actively used by administrators, physios, and bios to manage bookings, coordinate schedules, and ensure smooth
+      facility utilization — all from one centralized digital platform.
+    </p>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="detail-section">
+    <h2> Overview</h2>
+    <p>
+      The system provides a streamlined, role-based environment where different user groups — including Admins, Physios,
+      Bios, and Super Admins — can efficiently manage facility schedules, recurring bookings, and operational oversight.
+    </p>
+    <p>
+      Its primary purpose is to improve coordination, eliminate double-booking, and build accountability within HPC’s
+      day-to-day operations. Designed for clarity, performance, and maintainability, it runs as a stable production system
+      supporting real-world university use.
+    </p>
+  </div>
+
+  <!-- CORE FEATURES -->
+  <div class="detail-section">
+    <h2> Core Features</h2>
+
+    <h3>1 Role-Based User Management</h3>
+    <ul>
+      <li>Dedicated access levels for Admins, Physios, Bios, and Super Admins.</li>
+      <li>Super Admins oversee all activity and manage new user creation.</li>
+      <li>Admins handle day-to-day facility and booking operations.</li>
+      <li>Secure profile and password management for all users.</li>
+    </ul>
+
+    <h3>2 Booking Management</h3>
+    <ul>
+      <li>Once-off bookings for single sessions or events.</li>
+      <li>Recurring booking requests for teams or weekly training groups.</li>
+      <li>Built-in validation ensures no double bookings or over-capacity issues.</li>
+      <li>Admins can approve, reject, or edit bookings directly from the dashboard.</li>
+    </ul>
+
+    <h3>3️ Audit Logging & Transparency</h3>
+    <ul>
+      <li>Every user action (login, booking, update) is logged with timestamps.</li>
+      <li>Super Admins can review activity chronologically or by user.</li>
+      <li>Ensures accountability and data integrity across all roles.</li>
+    </ul>
+
+    <h3>4️ Admin Dashboard</h3>
+    <ul>
+      <li>Displays current bookings, requests, and facility availability.</li>
+      <li>Provides a snapshot of the day’s and week’s activity.</li>
+      <li>Accessible on both desktop and tablet for staff convenience.</li>
+    </ul>
+
+    <h3>5️ Super Admin Console</h3>
+    <ul>
+      <li>Dedicated management view for full system control.</li>
+      <li>User creation, role assignment, and activity monitoring.</li>
+      <li>Built with a darker, minimal theme to distinguish system-level pages.</li>
+    </ul>
+  </div>
+
+  <!-- ARCHITECTURE -->
+  <div class="detail-section">
+    <h2> Architecture</h2>
+    <table class="glass-table">
+      <tr><th>Layer</th><th>Description</th></tr>
+      <tr><td>Frontend</td><td>Thymeleaf and Bootstrap 5 for responsive, clean UI.</td></tr>
+      <tr><td>Backend</td><td>Spring Boot 3 (Java 17) with MVC structure.</td></tr>
+      <tr><td>Database</td><td>MySQL 8 with Spring Data JPA and Hibernate ORM.</td></tr>
+      <tr><td>Security & Auth</td><td>Managed by Spring Security with role-based access.</td></tr>
+      <tr><td>Deployment</td><td>Hosted on Render Cloud as a live production service.</td></tr>
+    </table>
+  </div>
+
+  <!-- DESIGN & USER EXPERIENCE -->
+  <div class="detail-section">
+    <h2> Design & User Experience</h2>
+    <ul>
+      <li>UWC-inspired blue and gold palette with glassy dark overlays.</li>
+      <li>Dynamic dashboards and responsive layouts across all devices.</li>
+      <li>Streamlined forms and visual status tracking for clarity and usability.</li>
+      <li>Modern, calm tone — professional yet friendly for day-to-day use.</li>
+    </ul>
+  </div>
+
+  <!-- FUTURE ENHANCEMENTS -->
+  <div class="detail-section">
+    <h2> Future Enhancements</h2>
+    <ul>
+      <li>Integration with Google Calendar for automatic schedule syncing.</li>
+      <li>Email/SMS notifications for booking confirmations and reminders.</li>
+      <li>Advanced analytics dashboard for usage trends and peak hours.</li>
+      <li>Exportable booking reports and audit logs.</li>
+      <li>Support for additional HPC facilities and external partners.</li>
+    </ul>
+  </div>
+
+  <!-- IMAGE GALLERY -->
+  <div class="detail-section">
+    <h2> System in Action</h2>
+    <div class="image-gallery">
+      <img src="../assets/images/hpc-dashboard.png" alt="Dashboard Screenshot" />
+      <img src="../assets/images/hpc-profile.png" alt="Profile Screenshot" />
+      <img src="../assets/images/hpc-users.png" alt="Manage Users Screenshot" />
+      <img src="../assets/images/hpc-audit.png" alt="Audit Log Screenshot" />
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>© 2025 Dateh Ambe. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

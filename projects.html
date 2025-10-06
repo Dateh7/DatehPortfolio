@@ -5,102 +5,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Dateh Ambe</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
 
-<!-- HEADER /  -->
-<header class="projects-header">
-  <div class="back-button">
-    <a href="index.html" title="Back to Home">
-      <img src="assets/icons/door.svg" alt="Back to Home">
-    </a>
-  </div>
-  <div class="header-text">
-    <h1><span class="highlight">My Projects</span></h1>
-    <p>Here are some of the systems, tools, and creations I've worked on.</p>
+<header class="nav glass simple">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">← Home</a>
+    <h1 class="page-title">All Projects</h1>
+    <div></div>
   </div>
 </header>
 
-
-<!-- PROJECTS GRID -->
-<section id="projects-full">
-  <div class="projects-grid">
-
-    <!-- Project 0: A-J Pools Website -->
-    <div class="project-card">
-      <h3>A-J pools website </h3>
-      <p>A-j Pools is a custom, responsive static website built from the ground up with HTML5, CSS3, and vanilla JavaScript. It features a full-screen hero section, clear service overviews, a before/after gallery, an animated FAQ accordion, and a contact form with Formspree integration plus a floating WhatsApp chat button. SEO-optimized and mobile-first, it’s deployed on GitHub Pages under a-jpools.com.</p>
-      <div class="buttons">
-        <a href="https://a-jpools.com" class="btn" target="_blank">View Website</a>
-      </div>
-    </div>
-
-    <!-- Project 1: EazyCuts -->
-    <div class="project-card">
-      <h3>EazyCuts</h3>
-      <p>A full-stack web application built for a local barber shop to manage 30-minute time-slot bookings, send email confirmations, track revenue, and optionally check in via QR code.</p>
-      
-      <div class="buttons">
-        <a href="https://github.com/Dateh7/eazycuts" class="btn" target="_blank">View Code</a>
-      </div>
-    </div>
-
-
-
-    <!-- Project 2: FestivalPass -->
-    <div class="project-card">
-      <h3>FestivalPass</h3>
-      <p>An academic Java application demonstrating relational databases and CRUD operations for managing vendors, ticketing, and festival setups using MS Access as a backend.</p>
-      <div class="buttons">
-        <a href="https://github.com/Dateh7/MusicFestivalManagementApplication" class="btn" target="_blank">View Code</a>
-      </div>
-    </div>
-
-
-
-    <!-- Project 4: SausageStop OR PAT -->
-    <div class="project-card">
-      <h3>SausageStop</h3>
-      <p>A Python desktop application built to support food truck operations, including order tracking, inventory, and reporting. Developed for a university project (88%) and placed 2nd in the Batsamayi Solutions Challenge.</p>
-      <div class="buttons">
-        <a  class="btn" target="_blank">Demo Coming Soon</a>
-      </div>
-    </div>
-
+<section class="catalog">
+  <div class="section__head" data-aos="fade-up">
+    <h2>Project Gallery</h2>
+    <p>Click a card to view detailed info. Some open external code or live demos.</p>
   </div>
 
+  <div class="grid grid--catalog">
 
+    <!-- HPC Booking -->
+    <article class="card glass" data-aos="zoom-in" data-aos-delay="150">
+      <div class="card__tag">Full-Stack • Spring Boot</div>
+      <h3 class="card__title">HPC Facility Booking System</h3>
+      <p class="card__desc">
+        A full-stack system for UWC’s High-Performance Centre to streamline facility scheduling and user management.
+        Features role-based access, audit logs, and a clean Thymeleaf-based admin dashboard.
+      </p>
+      <div class="card__actions">
+        <a href="hpc-booking.html" class="btn">View Details</a>
+      </div>
+    </article>
+
+    <!-- EazyCuts -->
+    <article class="card glass" data-aos="zoom-in">
+      <div class="card__tag">Full-Stack • Spring Boot</div>
+      <h3 class="card__title">EazyCuts</h3>
+      <p class="card__desc">Barber booking: slots, QR walk-ins, email confirmations, admin revenue tracking.</p>
+      <div class="card__actions">
+        <button class="btn" data-modal="eazycuts">Details</button>
+        <a class="btn btn--ghost" target="_blank" href="https://github.com/Dateh7/eazycuts">Code</a>
+      </div>
+    </article>
+
+    <!-- FestivalPass -->
+    <article class="card glass" data-aos="zoom-in" data-aos-delay="50">
+      <div class="card__tag">Java • Database</div>
+      <h3 class="card__title">FestivalPass</h3>
+      <p class="card__desc">Vendor, ticket, and event management system using relational database design and CRUD logic.</p>
+      <div class="card__actions">
+        <button class="btn" data-modal="festivalpass">Details</button>
+        <a class="btn btn--ghost" target="_blank" href="https://github.com/Dateh7/MusicFestivalManagementApplication">Code</a>
+      </div>
+    </article>
+
+    <!-- A-J Pools -->
+    <article class="card glass" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card__tag">Website • SEO</div>
+      <h3 class="card__title">A-J Pools</h3>
+      <p class="card__desc">Responsive business site with service highlights, gallery, and contact integration.</p>
+      <div class="card__actions">
+        <button class="btn" data-modal="ajpools">Details</button>
+        <a class="btn btn--ghost" target="_blank" href="https://a-jpools.com">Live</a>
+      </div>
+    </article>
+
+    <!-- Sausage Stop -->
+    <article class="card glass" data-aos="zoom-in" data-aos-delay="150">
+      <div class="card__tag">Python • Desktop</div>
+      <h3 class="card__title">Sausage Stop</h3>
+      <p class="card__desc">Order and inventory tracking app that achieved 88% and placed 2nd in the Batsamayi Challenge.</p>
+      <div class="card__actions">
+        <button class="btn" data-modal="sausagestop">Details</button>
+        <button class="btn btn--ghost" disabled>Demo Soon</button>
+      </div>
+    </article>
+
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-container">
-    <p>© 2025 Dateh Ambe. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="mailto:datehambe2@gmail.com">
-        <img src="assets/icons/email.svg" alt="Email" title="Email Me" />
-      </a>
-      <a href="https://www.linkedin.com/in/dateh-ambe" target="_blank">
-        <img src="assets/icons/linkedin.svg" alt="LinkedIn" title="LinkedIn Profile" />
-      </a>
-      <a href="https://github.com/Dateh7" target="_blank">
-        <img src="assets/icons/github.svg" alt="GitHub" title="GitHub Profile" />
-      </a>
-    </div>
-  </div>
+<footer class="footer">
+  <p>© 2025 Dateh Ambe. All rights reserved.</p>
 </footer>
 
+
+<!-- ================== MODALS ================== -->
+
+<!-- EazyCuts Modal -->
+<div class="modal" id="modal-eazycuts" aria-hidden="true">
+  <div class="modal__dialog glass">
+    <button class="modal__close" data-close>×</button>
+    <h3>EazyCuts — Barber Booking System</h3>
+    <p>
+      A full-stack barber shop management system built using Spring Boot, Thymeleaf, and MySQL.
+      It handles 30-minute appointment slots, QR-based walk-ins, email notifications, and automated revenue summaries.
+    </p>
+    <ul>
+      <li>Customers book or walk in through a simple UI.</li>
+      <li>Admins view daily schedules and mark appointments as completed or no-show.</li>
+      <li>Revenue tracking dashboard calculates totals per service type.</li>
+      <li>System generates weekly booking slots automatically.</li>
+    </ul>
+
+    <div class="card__actions">
+      <a href="https://github.com/Dateh7/eazycuts" target="_blank" class="btn">View Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- FestivalPass Modal -->
+<div class="modal" id="modal-festivalpass" aria-hidden="true">
+  <div class="modal__dialog glass">
+    <button class="modal__close" data-close>×</button>
+    <h3>FestivalPass — Event Management App</h3>
+    <p>
+      A Java-based application showcasing relational database management for festival operations.
+      It allows staff to manage vendors, performances, stages, and ticket sales through an intuitive interface.
+    </p>
+    <ul>
+      <li>Relational structure using MS Access and JDBC connectivity.</li>
+      <li>CRUD functionality across core entities like Vendors, Customers, and Tickets.</li>
+      <li>Focused on demonstrating backend logic and data integrity.</li>
+    </ul>
+
+    <div class="card__actions">
+      <a href="https://github.com/Dateh7/MusicFestivalManagementApplication" target="_blank" class="btn">View Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- A-J Pools Modal -->
+<div class="modal" id="modal-ajpools" aria-hidden="true">
+  <div class="modal__dialog glass">
+    <button class="modal__close" data-close>×</button>
+    <h3>A-J Pools — Business Website</h3>
+    <p>
+      A responsive and SEO-optimized static website designed for A-J Pools, a pool repair business in Cape Town.
+      The site includes a clean layout, photo gallery, FAQ accordion, and contact form powered by Formspree.
+    </p>
+    <ul>
+      <li>Fully responsive mobile-first layout built with HTML, CSS, and JS.</li>
+      <li>Modern hero design with parallax background and animation.</li>
+      <li>Deployed on GitHub Pages with a custom domain and analytics.</li>
+    </ul>
+
+    <div class="card__actions">
+      <a href="https://a-jpools.com" target="_blank" class="btn">Visit Site</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sausage Stop Modal -->
+<div class="modal" id="modal-sausagestop" aria-hidden="true">
+  <div class="modal__dialog glass">
+    <button class="modal__close" data-close>×</button>
+    <h3>Sausage Stop — Python Desktop App</h3>
+    <p>
+      A lightweight food truck management application developed using Python for order handling and inventory tracking.
+      It won 2nd place at the Batsamayi Challenge for innovation and practicality.
+    </p>
+    <ul>
+      <li>Features a structured database for item inventory and order tracking.</li>
+      <li>Generates transaction summaries and daily sales insights.</li>
+      <li>Designed for small business efficiency and quick reporting.</li>
+    </ul>
+
+  </div>
+</div>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true
-  });
-</script>
-
-
+<script src="js/main.js"></script>
 </body>
 </html>
